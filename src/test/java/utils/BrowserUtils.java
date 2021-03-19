@@ -24,8 +24,7 @@ public class BrowserUtils {
         select.selectByVisibleText(text);
     }
     public static String takeScreenShot(){
-        //we use getScreenshotAs method to gete the screenshot from our driver.
-        //we convert output to the File type.
+
 
         File source=((TakesScreenshot) Driver.getDriver()).getScreenshotAs(OutputType.FILE);
         //System.getProperty("user.dir");-->it will give the current project file directory.
